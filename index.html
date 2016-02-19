@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MasterMind</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="dialog">
+		<strong id="title">Title</strong>
+		<p id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+		<span id="close">Close</span>
+	</div>
+
+	<span id="score">0</span>
+	<span id="restart">Restart</span>
+	
+	<ul id="help">
+		<li><span class="bubbleGreen" style="background-color: #0F0;"></span> Au moins une couleur bien placé !</li>
+		<li><span class="bubbleRed" style="background-color: #F00;"></span> Mini une couleur est présente mais pas bien placé !</li>
+		<li><span class="bubbleWhite" style="background-color: #FFF;"></span> Aucune couleur n'est présente !</li>
+	</ul>
+
+	<div class="warp">
+		<div class="lignes lineOne" line="1">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineTwo" line="2">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineThree" line="3">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineFour" line="4">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineFive" line="5">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineSix" line="6">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineSeven" line="7">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineHeight" line="8">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineNine" line="9">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+		<div class="lignes lineTen" line="10">
+			<strong class="hole" holeCode="1"></strong>
+			<strong class="hole" holeCode="2"></strong>
+			<strong class="hole" holeCode="3"></strong>
+			<strong class="hole" holeCode="4"></strong>
+			
+			<strong class="indices"></strong>
+
+		</div>
+	</div>
+
+
+
+
+	<div class="colors">
+		<strong class="colorButton" colorCode="1" style="background-color: rgb(84,172,210);">1</strong>
+		<strong class="colorButton" colorCode="2" style="background-color: rgb(97,189,109);">2</strong>
+		<strong class="colorButton" colorCode="3" style="background-color: rgb(147,101,184);">3</strong>
+		<strong class="colorButton" colorCode="4" style="background-color: rgb(247,218,100);">4</strong>
+		<strong class="colorButton" colorCode="5" style="background-color: rgb(251,160,38);">5</strong>
+		<strong class="colorButton" colorCode="6" style="background-color: rgb(209,72,65);">6</strong>
+		<strong class="colorButton" colorCode="7" style="background-color: rgb(239,239,239);">7</strong>
+		<strong class="colorButton" colorCode="8" style="background-color: rgb(41,105,176);">8</strong>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

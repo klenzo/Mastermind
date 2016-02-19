@@ -1,0 +1,170 @@
+*{padding:0;margin:0;box-sizing:border-box;}
+body{
+	background-color: rgb(41,41,41);
+	font-family: sans-serif;
+}
+
+.dialog{
+	width: 300px;
+	border-radius: 5px;
+	background-color: #FFF;
+	position: absolute;
+	top: 20px;
+	left: 40%;
+	overflow: hidden;
+	display: none;
+	text-align: center;
+}
+	.dialog #title{
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 5px;
+		font-size: 24px;
+	}
+	
+	.dialog.win #title{
+		background-color: #5C5;
+	}
+	.dialog.lost #title{
+		background-color: #C55;
+	}
+
+	.dialog #close{
+		display: block;
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #292929;
+		margin: 5px auto;
+		border-radius: 3px;
+		color: #E9E9E9;
+		cursor: pointer;
+	}
+
+
+	.dialog #message{
+		padding: 10px 5px;
+	}
+
+#score{
+	position: fixed;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #FF0;
+	border-radius: 0 3px 3px 0;
+	display: inline-block;
+	font-size: 18px;
+}
+#restart{
+	position: fixed;
+	left: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #5C5;
+	border-radius: 0 3px 3px 0;
+	display: inline-block;
+	margin-top: 60px;
+	padding: 0 10px;
+	font-family: sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#help{
+	position: fixed;
+	left: 0;
+	height: 50px;
+	padding: 5px 0;
+	width: 50px;
+	background-color: #55C;
+	top: 180px;
+	overflow: hidden;
+	padding-left: 50px;
+	list-style: none;
+	color: #FFF;
+	background-image: url('http://dionhardy.com/shelfhelp/images/icon_help.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+	#help:hover{
+		width: 300px;
+		padding-left: 5px;
+		background-image: none;
+		height: auto;
+		width: auto;
+	}
+	#help li{display: block; height: 50px; line-height: 50px;padding: 0 5px;}
+	#help span{
+		display: inline-block;
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+		border-radius: 32px;
+		background-color: #C55;
+	}
+
+
+.warp{
+	width: 450px;
+	margin: 50px auto;
+	padding: 10px;
+	border: 1px solid #F50;
+	border-radius: 3px;
+	background-color: rgb(43, 43, 43);
+}
+
+.lignes{
+	height: 75px;
+	line-height: 75px;
+	padding: 0 5px;
+}
+
+	.hole{
+		width: 65px;
+		height: 65px;
+		background-color: rgba(233,233,233, 0.1);
+		display: inline-block;
+		float: left;
+		border-radius: 50%;
+		margin: 5px;
+	}
+
+	.indices{
+		display: inline-block;
+		float: right;
+		width: 30px;
+		height: 30px;
+		margin: 15px;
+		font-size: 48px;
+		text-align: center;
+		padding: 20px;
+		border-radius: 50%;
+		background-color: rgba(230,230,230, 0.1);
+	}
+
+.colors{
+	height: 80px;
+	width: 640px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+	.colorButton{
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		float: left;
+		border-radius: 80px;
+		margin: 0 5px;
+		cursor: pointer;
+		line-height: 60px;
+		color: #292929;
+		font-size: 18px;
+	} .colorButton:hover{background-color: #FF0;border: 5px solid #FFF;color:transparent;}
